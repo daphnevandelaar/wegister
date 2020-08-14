@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200704193733_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200704193733_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200704194147_InitialCreate.cs" />
+    <Compile Remove="Migrations\20200704194147_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20200704194405_Employer.cs" />
+    <Compile Remove="Migrations\20200704194405_Employer.Designer.cs" />
+    <Compile Remove="Migrations\20200704195740_test.cs" />
+    <Compile Remove="Migrations\20200704195740_test.Designer.cs" />
+    <Compile Remove="Migrations\20200704200456_test.cs" />
+    <Compile Remove="Migrations\20200704200456_test.Designer.cs" />
+    <Compile Remove="Migrations\20200704200546_test.cs" />
+    <Compile Remove="Migrations\20200704200546_test.Designer.cs" />
+    <Compile Remove="Migrations\20200704203002_EmployerAdded.cs" />
+    <Compile Remove="Migrations\20200704203002_EmployerAdded.Designer.cs" />
+    <Compile Remove="Migrations\20200704204910_ChangedHourregistration.cs" />
+    <Compile Remove="Migrations\20200704204910_ChangedHourregistration.Designer.cs" />
+    <Compile Remove="Migrations\20200808085050_Changed-Entities-Ids.cs" />
+    <Compile Remove="Migrations\20200808085050_Changed-Entities-Ids.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="3.1.4" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.Dotnet" Version="2.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wegister.Exceptions\Wegister.Exceptions.csproj" />
+    <ProjectReference Include="..\Wegister.Models\Wegister.Models.csproj" />
+  </ItemGroup>
+</Project>

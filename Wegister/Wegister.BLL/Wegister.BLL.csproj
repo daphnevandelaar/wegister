@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Wegister.DAL\Wegister.DAL.csproj" />
+    <ProjectReference Include="..\Wegister.Exceptions\Wegister.Exceptions.csproj" />
+    <ProjectReference Include="..\Wegister.Models\Wegister.Models.csproj" />
+    <ProjectReference Include="..\Wegister.Viewmodels\Wegister.Viewmodels.csproj" />
+  </ItemGroup>
+
+</Project>
